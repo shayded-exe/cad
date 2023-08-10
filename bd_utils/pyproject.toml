@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bd_utils"
+version = "0.1.0"
+description = ""
+authors = ["Ryan Shea <shayded@shayded.com>"]
+readme = "README.md"
+packages = [
+  {include = "bd_utils", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+build123d = {path = "../build123d", develop = true}
+
+[tool.poetry.group.dev.dependencies]
+ocp_vscode = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

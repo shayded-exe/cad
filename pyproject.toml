@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "cad"
+version = "0.1.0"
+description = ""
+authors = ["Ryan Shea <shayded@shayded.com>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+setuptools-scm = "^7.1.0"
+build123d = {path = "build123d", develop = true}
+bd_warehouse = {path = "bd_warehouse", develop = true}
+bd_gridfinity = {path = "bd_gridfinity", develop = true}
+bd_utils = {path = "bd_utils", develop = true}
+
+[tool.poetry.group.dev.dependencies]
+ocp_vscode = "*"
+
+
+[tool.pyright]
+exclude = [
+  "**/site-packages",
+  "*/docs",
+  "*/examples",
+  "bd_warehouse",
+  "build123d/tests"
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

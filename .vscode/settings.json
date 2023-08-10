@@ -1,0 +1,14 @@
+{
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    }
+  },
+  "cSpell.words": ["gridfinity", "tuplify"],
+  "cSpell.ignorePaths": ["**/build123d/**/*", "**/bd_warehouse/**/*"],
+  "git.autoRepositoryDetection": "subFolders",
+  "files.exclude": {
+    "**/site-packages/**": true
+  },
+  "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true
+}

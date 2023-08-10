@@ -1,0 +1,6 @@
+[submodule "build123d"]
+	path = build123d
+	url = https://github.com/gumyr/build123d.git
+[submodule "bd_warehouse"]
+	path = bd_warehouse
+	url = https://github.com/gumyr/bd_warehouse.git
